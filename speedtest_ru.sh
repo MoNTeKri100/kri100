@@ -77,6 +77,8 @@ speed_test() {
                 latency_color="\033[0;31m"  # красный
             elif (( latency_value > 50 )); then
                 latency_color="\033[1;35m"  # розовый/пурпурный
+            elif (( latency_value > 40 )); then
+                latency_color="\033[1;33m"  # жёлтый
             else
                 latency_color="\033[0;36m"  # бирюзовый
             fi
