@@ -90,7 +90,9 @@ speed() {
     speed_test '2699' 'MTS, SPB'
     speed_test '1909' 'MTS, Tver'
 
-
+speed_test '5083' 'Beeline, Moscow'
+speed_test '13539' 'Beeline, SPB'
+speed_test '13540' 'Beeline, EKB'
     speed_test '1897' 'Beeline, Moscow'
     speed_test '4744' 'Beeline, Kaluga'
     speed_test '1638' 'Beeline, Armeny'
