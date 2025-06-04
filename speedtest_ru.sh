@@ -75,28 +75,31 @@ speed_test() {
 
 speed() {
     # Длина строки не более 15 символов
-    speed_test '' 'Speedtest.net'
+  speed_test '' 'Speedtest.net'
   speed_test '3522' 'RT, Murmansk'
-    speed_test '3484' 'RT, NN'
-    speed_test '2599' 'RT, SPB'
-    speed_test '3265' 'RT, Tver'
-speed_test '3515' 'RT, DolgoPrydny'
-speed_test '3682' 'RT, Moscow'
- speed_test '4296' 'RT, Kemerovo'
-     speed_test '3527' 'RT, Chelyabinsk'
-        speed_test '2598' 'RT, Kaliningrad'
-    speed_test '4283' 'RT, Petropavlovsk-Kamchatsky'
+  speed_test '3484' 'RT, NN'
+  speed_test '2599' 'RT, SPB'
+  speed_test '3265' 'RT, Tver'
+  speed_test '3515' 'RT, DolgoPrydny'
+  speed_test '3682' 'RT, Moscow'
+  speed_test '4296' 'RT, Kemerovo'
+  speed_test '3527' 'RT, Chelyabinsk'
+  speed_test '2598' 'RT, Kaliningrad'
+  speed_test '4283' 'RT, Petropavlovsk-Kamchatsky'
   speed_test '5768' 'RT, Orenburg'
-      speed_test '3133' 'RT, Vladivostok'
-    
- 
-
-
-    speed_test '4296' 'RT, Kemerovo'
-    speed_test '5145' 'RT, SPB'
-    speed_test '12184' 'RT, EKB'
-    speed_test '12186' 'RT, KAZ'
-speed_test '3523' 'RT, Vladimir'
+  speed_test '3133' 'RT, Vladivostok'
+  speed_test '5145' 'RT, SPB'
+  speed_test '12184' 'RT, EKB'
+  speed_test '12186' 'RT, KAZ'
+  speed_test '3523' 'RT, Vladimir'
+  speed_test '2599' 'RT, SPB'
+  speed_test '2563' 'RT, NN'
+  speed_test '2603' 'RT, Samara'
+  speed_test '2278' 'RT, Blagoveshensk'
+  speed_test '2654' 'RT, Krasnodar'
+  speed_test '12574' 'RT, Moscow'
+  speed_test '12183' 'RT, Moscow СNTR'
+  speed_test '48192' 'Aeza.net'
     
     
     speed_test '6827' 'MGTS, Moscow'
@@ -129,11 +132,7 @@ speed_test '1789' 'Megafon, Moscow'
     speed_test '6430' 'Tele2, NSK'
     speed_test '39986' 'Tele2, Latvia'
 
-    speed_test '2599' 'RT, SPB'
-    speed_test '2563' 'RT, NN'
-    speed_test '2603' 'RT, Samara'
-    speed_test '2278' 'RT, Blagoveshensk'
-    speed_test '2654' 'RT, Krasnodar'
+
 
     speed_test '60608' 'Tricolor, SPB'
     speed_test '16125' 'Selectel, SPB'
