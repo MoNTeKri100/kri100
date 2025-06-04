@@ -63,23 +63,12 @@ speed_test() {
         ./speedtest-cli/speedtest --progress=no --server-id="$1" --accept-license --accept-gdpr >./speedtest-cli/speedtest.log 2>&1
     fi
     if [ $? -eq 0 ]; then
-        local dl_speed up_speed latency latency_value
+        local dl_speed up_speed latency
         dl_speed=$(awk '/Download/{print $3" "$4}' ./speedtest-cli/speedtest.log)
         up_speed=$(awk '/Upload/{print $3" "$4}' ./speedtest-cli/speedtest.log)
         latency=$(awk '/Latency/{print $3" "$4}' ./speedtest-cli/speedtest.log)
-        latency_value=$(awk '/Latency/{print $2}' ./speedtest-cli/speedtest.log | tr -d 'ms')  
-        # Извлекаем только число
-        
         if [[ -n "${dl_speed}" && -n "${up_speed}" && -n "${latency}" ]]; then
-            # Определяем цвет для latency
-            if (( $(echo "$latency_value > 50" | bc -l) )); then
-                latency_color="\033[0;31m"  # Красный
-            else
-                latency_color="\033[0;36m"  # Голубой (как было)
-            fi
-            
-            printf "\033[0;33m%-18s\033[0;32m%-18s\033[0;31m%-20s${latency_color}%-12s\033[0m\n" \
-                   " ${nodeName}" "${up_speed}" "${dl_speed}" "${latency}"
+            printf "\033[0;33m%-18s\033[0;32m%-18s\033[0;31m%-20s\033[0;36m%-12s\033[0m\n" " ${nodeName}" "${up_speed}" "${dl_speed}" "${latency}"
         fi
     fi
 }
