@@ -103,7 +103,6 @@ speed() {
   speed_test '4718' 'Beeline, Moscow'
   speed_test '65484' 'Beeline, Tver'
   speed_test '63100' 'Beeline, Ivanovo'
-  speed_test '24945' 'Beeline, Krasnoyarsk'
   speed_test '24946' 'Beeline, Tyumen'
   speed_test '26679' 'Beeline, Sochi'
 {
