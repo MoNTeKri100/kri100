@@ -79,28 +79,42 @@ speed() {
 
     speed_test '1907' 'MTS, Moscow'
     speed_test '2699' 'MTS, SPb'
-	speed_test '2664' 'DOM.RU, Naberezhnye Chelny'
+    speed_test '1908' 'MTS, EKB'
 
+
+    speed_test '1897' 'Beeline, Moscow'
     speed_test '4744' 'Beeline, Kaluga'
     speed_test '4903' 'Beeline, AST'
 
-    speed_test '4483' 'RCom, Penza'
-    speed_test '3310' 'RCom, AST'
+speed_test '1789' 'Megafon, Moscow'
+     speed_test '1792' 'Megafon, NVS'
+     speed_test '1401' 'Megafon, Samara'
 
     speed_test '2660' 'DOM.RU, Perm'
+    speed_test '2690' 'DOM.RU, SPB'
+    speed_test '2697' 'DOM.RU, Tyumen'
 
-    speed_test '6388' 'Megafon, KRD'
-    # Краснодар
-    speed_test '6389' 'Megafon, NVS'
-    # Новосибирск
+   
+    
 
     speed_test '6616' 'Tele2, EKB'
     speed_test '6563' 'Tele2, NIZH'
     speed_test '6430' 'Tele2, NVS'
 
-    speed_test '3805' 'ACom, VLD'
-    # Альянс Телеком 
-    # Владивосток
+    speed_test '2599' 'RT, SPB'
+    speed_test '2563' 'RT, NN'
+    speed_test '2752' 'RT, Tyumen'
+    speed_test '2602' 'RT, Ekaterinburg'
+    speed_test '1262' 'RT, Orenburg'
+
+    
+    
+    speed_test '1475' 'Germany, Berlin'
+    speed_test '2322' 'RuTube, Moscow'
+    speed_test '1348' 'Balticom, Latvia'
+    
+    
+    
     speed_test '1325' 'Tatcom, Kazan'
     # Tattelecom
 }
