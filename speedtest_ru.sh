@@ -73,11 +73,14 @@ speed_test() {
         latency_value=$(awk '/Latency/{print int($3)}' ./speedtest-cli/speedtest.log)
 
         if [[ -n "${dl_speed}" && -n "${up_speed}" && -n "${latency}" ]]; then
-            if (( latency_value > 50 )); then
+            if (( latency_value > 70 )); then
                 latency_color="\033[0;31m"  # красный
+            elif (( latency_value > 50 )); then
+                latency_color="\033[1;35m"  # розовый/пурпурный
             else
                 latency_color="\033[0;36m"  # бирюзовый
             fi
+
             printf "\033[0;33m%-18s\033[0;32m%-18s\033[0;31m%-20s${latency_color}%-12s\033[0m\n" " ${nodeName}" "${up_speed}" "${dl_speed}" "${latency}"
         fi
     fi
