@@ -78,13 +78,13 @@ speed() {
     speed_test '' 'Speedtest.net'
 
     speed_test '1907' 'MTS, Moscow'
-    speed_test '2699' 'MTS, SPb'
-    speed_test '1908' 'MTS, EKB'
+    speed_test '2699' 'MTS, SPB'
+    speed_test '1909' 'MTS, Tver'
 
 
     speed_test '1897' 'Beeline, Moscow'
     speed_test '4744' 'Beeline, Kaluga'
-    speed_test '4903' 'Beeline, AST'
+    speed_test '1638' 'Beeline, Armeny'
 
 speed_test '1789' 'Megafon, Moscow'
      speed_test '1792' 'Megafon, NVS'
@@ -92,7 +92,7 @@ speed_test '1789' 'Megafon, Moscow'
 
     speed_test '2660' 'DOM.RU, Perm'
     speed_test '2690' 'DOM.RU, SPB'
-    speed_test '2697' 'DOM.RU, Tyumen'
+    speed_test '2732' 'DOM.RU, Tver'
 
    
     
@@ -103,14 +103,14 @@ speed_test '1789' 'Megafon, Moscow'
 
     speed_test '2599' 'RT, SPB'
     speed_test '2563' 'RT, NN'
-    speed_test '2752' 'RT, Tyumen'
-    speed_test '2602' 'RT, Ekaterinburg'
-    speed_test '1262' 'RT, Orenburg'
+    speed_test '2603' 'RT, Samara'
+    speed_test '2278' 'RT, Blagoveshensk'
+    speed_test '2654' 'RT, Krasnodar'
 
     
     
-    speed_test '1475' 'Germany, Berlin'
-    speed_test '2322' 'RuTube, Moscow'
+    speed_test '2292' 'Germany, Berlin'
+    speed_test '864' 'Fin, Helsenky'
     speed_test '1348' 'Balticom, Latvia'
     
     
