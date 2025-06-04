@@ -90,7 +90,7 @@ speed_test() {
 speed() {
     # Длина строки не более 15 символов
  
-  
+  echo "---------------- ROSTELECOM----------------" 
   speed_test '' 'Speedtest.net'
   speed_test '49870' 'RT, Kaluga'
   speed_test '5768' 'RT, Orenburg'
@@ -100,51 +100,39 @@ speed() {
   speed_test '4296' 'RT, Kemerovo'
   speed_test '2603' 'RT, Samara'
    
-  {
-    printf "%-70s\n" "-" | sed 's/\s/-/g'
-} 
- 
-    
+echo "-------------------- MTS---------------------"
   speed_test '1907' 'MTS, Moscow'
   speed_test '4247' 'MTS, SPB'
   speed_test '51113' 'MTS, Reutovo'
   speed_test '3867' 'MTS, Norilsk'
   speed_test '62865' 'MTS, Tyumen'
- {
-    printf "%-70s\n" "-" | sed 's/\s/-/g'
-}   
-
+  
+echo "------------------ BEELINE------------------" 
   speed_test '4718' 'Beeline, Moscow'
   speed_test '65484' 'Beeline, Tver'
   speed_test '63100' 'Beeline, Ivanovo'
   speed_test '24946' 'Beeline, Tyumen'
   speed_test '26679' 'Beeline, Sochi'
-{
-    printf "%-70s\n" "-" | sed 's/\s/-/g'
-}
+echo "------------------ MEGAFON------------------" 
   speed_test '17039' 'Megafon, SPB'
   speed_test '20200' 'Megafon, SKL'
   speed_test '1634' 'Megafon, BLSH'
   speed_test '17040' 'Megafon, KRaSG'
   speed_test '5641' 'Megafon, VLG'
   speed_test '5649' 'Megafon, PZK'
-{
-    printf "%-70s\n" "-" | sed 's/\s/-/g'
-}
+
+echo "---------------- TELE2-YOTA---------------" 
   speed_test '27247' 'Tele2, Moscow'
   speed_test '7531' 'Yota, Moscow'
   
-{
-    printf "%-70s\n" "-" | sed 's/\s/-/g'
-}     
+echo "---------------- DOM.RU----------------"     
   speed_test '2732' 'DOM.RU, Tver'
   speed_test '2661' 'DOM.RU, Tula'
   speed_test '2715' 'DOM.RU, VLG'
   speed_test '2694' 'DOM.RU, Orenburg'
   speed_test '2697' 'DOM.RU, Tyumen'
-{
-    printf "%-70s\n" "-" | sed 's/\s/-/g'
-}
+
+echo "---------------- OTHER----------------" 
   speed_test '21456' 'DataPlanet, Zelik'
   speed_test '33846' 'MicMedia, Zelik'
   speed_test '37711' 'BLIZCO, Zelik'
@@ -152,18 +140,12 @@ speed() {
   speed_test '29914' 'UMINET, PoVRV'
   speed_test '29914' 'City-Line, KoNKV'
   speed_test '44144' 'JIFNR, Dubna'
-
-  {
-    printf "%-70s\n" "-" | sed 's/\s/-/g'
-}
-  
-  speed_test '48192' 'Aeza.net,Moscow'
+ speed_test '48192' 'Aeza.net,Moscow'
   speed_test '44487' 'VDSina, Moscow'
   speed_test '6827' 'MGTS, Moscow'
   speed_test '11266' 'INETCOM, Moscow'
-{
-    printf "%-70s\n" "-" | sed 's/\s/-/g'
-}
+
+echo "---------------- WORLD----------------" 
   speed_test '61933' 'Paris, FR'
   speed_test '28922' 'Amsterdam, NL'
   speed_test '1348' 'Balticom, Latvia'
