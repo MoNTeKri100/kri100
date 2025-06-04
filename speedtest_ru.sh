@@ -75,88 +75,92 @@ speed_test() {
 
 speed() {
     # Длина строки не более 15 символов
+ 
+  
   speed_test '' 'Speedtest.net'
-  speed_test '3522' 'RT, Murmansk'
-  speed_test '3484' 'RT, NN'
-  speed_test '2599' 'RT, SPB'
-  speed_test '3265' 'RT, Tver'
-  speed_test '3515' 'RT, DolgoPrydny'
-  speed_test '3682' 'RT, Moscow'
-  speed_test '4296' 'RT, Kemerovo'
-  speed_test '3527' 'RT, Chelyabinsk'
-  speed_test '2598' 'RT, Kaliningrad'
-  speed_test '4283' 'RT, Petropavlovsk-Kamchatsky'
+  speed_test '49870' 'RT, Kaluga'
   speed_test '5768' 'RT, Orenburg'
-  speed_test '3133' 'RT, Vladivostok'
-  speed_test '5145' 'RT, SPB'
-  speed_test '12184' 'RT, EKB'
-  speed_test '12186' 'RT, KAZ'
-  speed_test '3523' 'RT, Vladimir'
-  speed_test '2599' 'RT, SPB'
   speed_test '2563' 'RT, NN'
+  speed_test '3513' 'RT, Voronezh'
+  speed_test '39860' 'RT, Kazan'
+  speed_test '4296' 'RT, Kemerovo'
   speed_test '2603' 'RT, Samara'
-  speed_test '2278' 'RT, Blagoveshensk'
-  speed_test '2654' 'RT, Krasnodar'
-  speed_test '12574' 'RT, Moscow'
-  speed_test '12183' 'RT, Moscow СNTR'
-  speed_test '48192' 'Aeza.net'
-    
-    
-    speed_test '6827' 'MGTS, Moscow'
-    speed_test '11266' 'INETCOM, Moscow'
-    
-    speed_test '1907' 'MTS, Moscow'
-    speed_test '2699' 'MTS, SPB'
-    speed_test '1909' 'MTS, Tver'
-
-speed_test '5083' 'Beeline, Moscow'
-speed_test '13539' 'Beeline, SPB'
-speed_test '13540' 'Beeline, EKB'
-    speed_test '1897' 'Beeline, Moscow'
-    speed_test '4744' 'Beeline, Kaluga'
-    speed_test '1638' 'Beeline, Armeny'
-
-speed_test '1789' 'Megafon, Moscow'
-     speed_test '1792' 'Megafon, NVS'
-     speed_test '1401' 'Megafon, Samara'
-
-    speed_test '2660' 'DOM.RU, Perm'
-    speed_test '2690' 'DOM.RU, SPB'
-    speed_test '2732' 'DOM.RU, Tver'
-
    
+  {
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+} 
+ 
     
+  speed_test '1907' 'MTS, Moscow'
+  speed_test '4247' 'MTS, SPB'
+  speed_test '51113' 'MTS, Reutovo'
+  speed_test '3867' 'MTS, Norilsk'
+  speed_test '62865' 'MTS, Tyumen'
+ {
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}   
 
-    speed_test '6616' 'Tele2, EKB'
-    speed_test '6563' 'Tele2, NN'
-    speed_test '6430' 'Tele2, NSK'
-    speed_test '39986' 'Tele2, Latvia'
+  speed_test '4718' 'Beeline, Moscow'
+  speed_test '65484' 'Beeline, Tver'
+  speed_test '63100' 'Beeline, Ivanovo'
+  speed_test '24945' 'Beeline, Krasnoyarsk'
+  speed_test '24946' 'Beeline, Tyumen'
+  speed_test '26679' 'Beeline, Sochi'
+{
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}
+  speed_test '17039' 'Megafon, SPB'
+  speed_test '20200' 'Megafon, Skolkovo'
+  speed_test '1634' 'Megafon, Balashikha'
+  speed_test '17040' 'Megafon, Krasnogorsk'
+  speed_test '5641' 'Megafon, Volgograd'
+  speed_test '5649' 'Megafon, Petrozavodsk'
+{
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}
+  speed_test '27247' 'Tele2, Moscow'
+  speed_test '7531' 'Yota, Moscow'
+  
+{
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}     
+  speed_test '2732' 'DOM.RU, Tver'
+  speed_test '2661' 'DOM.RU, Tula'
+  speed_test '2715' 'DOM.RU, Volgograd'
+  speed_test '2694' 'DOM.RU, Orenberg'
+  speed_test '2697' 'DOM.RU, Tyumen'
+{
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}
+  speed_test '21456' 'DataPlanet, Zelenograd'
+  speed_test '33846' 'MicMedia, Zelenograd'
+  speed_test '37711' 'BLIZCO, Zelenograd'
+  speed_test '2697' 'NET-NORD, Povarova'
+  speed_test '29914' 'UMINET, Povarova'
+  speed_test '29914' 'City-Line, Konakovo'
+  speed_test '44144' 'JIFNR, Dubna'
 
+  {
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}
+  
+  speed_test '48192' 'Aeza.net,Moscow'
+  speed_test '44487' 'VDSina, Moscow'
+  speed_test '6827' 'MGTS, Moscow'
+  speed_test '11266' 'INETCOM, Moscow'
+{
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}
+  speed_test '61933' 'Paris, FR'
+  speed_test '28922' 'Amsterdam, NL'
+  speed_test '1348' 'Balticom, Latvia'
+  speed_test '68348' 'Vilnus, Litva'
+  speed_test '1475' 'Berlin, DE'
+  speed_test '2463' 'Leypcih, DE'
+  speed_test '2495' 'Dresden, DE'
+  speed_test '70213' 'NY, USA'
+  speed_test '32983' 'Narva, Estonia'
 
-
-    speed_test '60608' 'Tricolor, SPB'
-    speed_test '16125' 'Selectel, SPB'
-
-    
-    
-    speed_test '61933' 'Paris, FR'
-    speed_test '28922' 'Amsterdam, NL'
-    speed_test '1348' 'Balticom, Latvia'
-    speed_test '68348' 'Vilnus, Litva'
-    speed_test '1475' 'Berlin, DE'
-    speed_test '2463' 'Leypcih, DE'
-    speed_test '2495' 'Dresden, DE'
-    speed_test '70213' 'NY, USA'
-    speed_test '32983' 'Narva, Estonia'
-
-    
-    
-    
-    
-    
-    
-    speed_test '1325' 'Tatcom, Kazan'
-    # Tattelecom
 }
 
 io_test() {
