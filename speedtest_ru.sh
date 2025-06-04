@@ -109,11 +109,11 @@ speed() {
     printf "%-70s\n" "-" | sed 's/\s/-/g'
 }
   speed_test '17039' 'Megafon, SPB'
-  speed_test '20200' 'Megafon, Skolkovo'
-  speed_test '1634' 'Megafon, Balashikha'
-  speed_test '17040' 'Megafon, Krasnogorsk'
-  speed_test '5641' 'Megafon, Volgograd'
-  speed_test '5649' 'Megafon, Petrozavodsk'
+  speed_test '20200' 'Megafon, SKL'
+  speed_test '1634' 'Megafon, BLSH'
+  speed_test '17040' 'Megafon, KRaSG'
+  speed_test '5641' 'Megafon, VLG'
+  speed_test '5649' 'Megafon, PZK'
 {
     printf "%-70s\n" "-" | sed 's/\s/-/g'
 }
@@ -125,18 +125,18 @@ speed() {
 }     
   speed_test '2732' 'DOM.RU, Tver'
   speed_test '2661' 'DOM.RU, Tula'
-  speed_test '2715' 'DOM.RU, Volgograd'
-  speed_test '2694' 'DOM.RU, Orenberg'
+  speed_test '2715' 'DOM.RU, VLG'
+  speed_test '2694' 'DOM.RU, Orenburg'
   speed_test '2697' 'DOM.RU, Tyumen'
 {
     printf "%-70s\n" "-" | sed 's/\s/-/g'
 }
-  speed_test '21456' 'DataPlanet, Zelenograd'
-  speed_test '33846' 'MicMedia, Zelenograd'
-  speed_test '37711' 'BLIZCO, Zelenograd'
-  speed_test '2697' 'NET-NORD, Povarova'
-  speed_test '29914' 'UMINET, Povarova'
-  speed_test '29914' 'City-Line, Konakovo'
+  speed_test '21456' 'DataPlanet, Zelik'
+  speed_test '33846' 'MicMedia, Zelik'
+  speed_test '37711' 'BLIZCO, Zelik'
+  speed_test '2697' 'NET-NORD, PoVRV'
+  speed_test '29914' 'UMINET, PoVRV'
+  speed_test '29914' 'City-Line, KoNKV'
   speed_test '44144' 'JIFNR, Dubna'
 
   {
