@@ -75,9 +75,9 @@ speed_test() {
 
 speed() {
     speed_test '' 'Speedtest.net'
-    speed_test '21541' 'Los Angeles, US'
-    speed_test '43860' 'Dallas, US'
-    speed_test '40879' 'Montreal, CA'
+    speed_test '17585' 'Abakan,OrionTelecom, RU'
+    speed_test '17352' 'Ramenskoye,AVIEL, RU'
+    speed_test '4903' 'Astrakhan,Beeline, RU'
     speed_test '61933' 'Paris, FR'
     speed_test '28922' 'Amsterdam, NL'
     speed_test '25858' 'Beijing, CN'
