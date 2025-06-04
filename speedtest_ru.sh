@@ -98,8 +98,8 @@ speed_test '1789' 'Megafon, Moscow'
     
 
     speed_test '6616' 'Tele2, EKB'
-    speed_test '6563' 'Tele2, NIZH'
-    speed_test '6430' 'Tele2, NVS'
+    speed_test '6563' 'Tele2, NN'
+    speed_test '6430' 'Tele2, NSK'
 
     speed_test '2599' 'RT, SPB'
     speed_test '2563' 'RT, NN'
@@ -109,9 +109,15 @@ speed_test '1789' 'Megafon, Moscow'
 
     
     
-    speed_test '2292' 'Germany, Berlin'
-    speed_test '864' 'Fin, Helsenky'
+    speed_test '61933' 'Paris, FR'
+    speed_test '28922' 'Amsterdam, NL'
     speed_test '1348' 'Balticom, Latvia'
+    speed_test '1475' 'Berlin, DE'
+    speed_test '2463' 'Leypcih, DE'
+
+    
+    
+    
     
     
     
