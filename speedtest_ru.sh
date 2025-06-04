@@ -77,10 +77,11 @@ speed() {
     # Длина строки не более 15 символов
     speed_test '' 'Speedtest.net'
 
-    speed_test '12183' 'RT, Moscow'
+    speed_test '4296' 'RT, Kemerovo'
     speed_test '5145' 'RT, SPB'
     speed_test '12184' 'RT, EKB'
     speed_test '12186' 'RT, KAZ'
+speed_test '3523' 'RT, Vladimir'
     
     
     speed_test '6827' 'MGTS, Moscow'
