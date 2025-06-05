@@ -9,7 +9,7 @@ NC='\033[0m' # No Color
 # Список сайтов для проверки
 SITES=(
    "https://4pda.to/forum/index.php?showforum=1192"
-   # "https://login.amd.com"
+   "https://login.amd.com"
     "https://nnm-club-me.ru"
     "https://chatgpt.com"
     "https://www.cisco.com/content/cdc/login.html"
