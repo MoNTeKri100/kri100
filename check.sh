@@ -12,9 +12,12 @@ SITES=(
     "telegram.org"
     "example.com"
     "piratebay.org"
+    "nnm-club-me.ru"
+    "pravda.com.ua"
+    
 )
 
-# Функция проверки доступности сайта
+# Функция проверки доступности сайтаp
 check_site() {
     local site=$1
     
