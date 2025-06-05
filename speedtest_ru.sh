@@ -57,33 +57,18 @@ next() {
 
 speed_test() {
     local nodeName="$2"
-
-    if [ -z "$1" ]; then
-        ./speedtest-cli/speedtest --progress=no --accept-license --accept-gdpr > ./speedtest-cli/speedtest.log 2>&1
+    if [ -z "$1" ];then
+        ./speedtest-cli/speedtest --progress=no --accept-license --accept-gdpr >./speedtest-cli/speedtest.log 2>&1
     else
-        ./speedtest-cli/speedtest --progress=no --server-id="$1" --accept-license --accept-gdpr > ./speedtest-cli/speedtest.log 2>&1
+        ./speedtest-cli/speedtest --progress=no --server-id="$1" --accept-license --accept-gdpr >./speedtest-cli/speedtest.log 2>&1
     fi
-
     if [ $? -eq 0 ]; then
-        local dl_speed up_speed latency latency_value latency_color
-
+        local dl_speed up_speed latency
         dl_speed=$(awk '/Download/{print $3" "$4}' ./speedtest-cli/speedtest.log)
         up_speed=$(awk '/Upload/{print $3" "$4}' ./speedtest-cli/speedtest.log)
         latency=$(awk '/Latency/{print $3" "$4}' ./speedtest-cli/speedtest.log)
-        latency_value=$(awk '/Latency/{print int($3)}' ./speedtest-cli/speedtest.log)
-
         if [[ -n "${dl_speed}" && -n "${up_speed}" && -n "${latency}" ]]; then
-            if (( latency_value > 70 )); then
-                latency_color="\033[0;31m"  # красный
-            elif (( latency_value > 50 )); then
-                latency_color="\033[1;35m"  # розовый/пурпурный
-            elif (( latency_value > 40 )); then
-                latency_color="\033[1;33m"  # жёлтый
-            else
-                latency_color="\033[0;36m"  # бирюзовый
-            fi
-
-            printf "\033[0;33m%-18s\033[0;32m%-18s\033[0;31m%-20s${latency_color}%-12s\033[0m\n" " ${nodeName}" "${up_speed}" "${dl_speed}" "${latency}"
+            printf "\033[0;33m%-18s\033[0;32m%-18s\033[0;31m%-20s\033[0;36m%-12s\033[0m\n" " ${nodeName}" "${up_speed}" "${dl_speed}" "${latency}"
         fi
     fi
 }
