@@ -101,45 +101,45 @@ speed() {
  
   echo "--------------------------- ROSTELECOM----------------------------" 
   speed_test '' 'Speedtest.net'
-  speed_test '49870' 'RT, Kaluga'
-  speed_test '5768' 'RT, Orenburg'
+  speed_test '49870' 'RT, KLG'
+  speed_test '5768' 'RT, ORB'
   speed_test '2563' 'RT, NN'
-  speed_test '3513' 'RT, Voronezh'
-  speed_test '39860' 'RT, Kazan'
-  speed_test '4296' 'RT, Kemerovo'
-  speed_test '2603' 'RT, Samara'
+  speed_test '3513' 'RT, VRN'
+  speed_test '39860' 'RT, KZN'
+  speed_test '4296' 'RT, KEM'
+  speed_test '2603' 'RT, SAM'
    
 echo "-------------------------------- MTS-------------------------------"
-  speed_test '1907' 'MTS, Moscow'
+  speed_test '1907' 'MTS, MSC'
   speed_test '4247' 'MTS, SPB'
-  speed_test '51113' 'MTS, Reutovo'
-  speed_test '3867' 'MTS, Norilsk'
-  speed_test '62865' 'MTS, Tyumen'
+  speed_test '51113' 'MTS, REU'
+  speed_test '3867' 'MTS, NOR'
+  speed_test '62865' 'MTS, TYM'
   
 echo "------------------------------ BEELINE-----------------------------" 
-  speed_test '4718' 'Beeline, Moscow'
-  speed_test '65484' 'Beeline, Tver'
-  speed_test '63100' 'Beeline, Ivanovo'
-  speed_test '24946' 'Beeline, Tyumen'
-  speed_test '26679' 'Beeline, Sochi'
+  speed_test '4718' 'Beeline, MSC'
+  speed_test '65484' 'Beeline, TVR'
+  speed_test '63100' 'Beeline, IVA'
+  speed_test '24946' 'Beeline, TYM'
+  speed_test '26679' 'Beeline, SCH'
 echo "----------------------------- MEGAFON------------------------------" 
   speed_test '17039' 'Megafon, SPB'
   speed_test '20200' 'Megafon, SKL'
   speed_test '1634' 'Megafon, BLSH'
-  speed_test '17040' 'Megafon, KRaSG'
+  speed_test '17040' 'Megafon, KSG'
   speed_test '5641' 'Megafon, VLG'
   speed_test '5649' 'Megafon, PZK'
 
 echo "--------------------------- TELE2-YOTA-----------------------------" 
-  speed_test '27247' 'Tele2, Moscow'
-  speed_test '7531' 'Yota, Moscow'
+  speed_test '27247' 'Tele2, MSC'
+  speed_test '7531' 'Yota, MSC'
   
 echo "---------------------------- DOM.RU--------------------------------"     
-  speed_test '2732' 'DOM.RU, Tver'
-  speed_test '2661' 'DOM.RU, Tula'
+  speed_test '2732' 'DOM.RU, TVR'
+  speed_test '2661' 'DOM.RU, TUL'
   speed_test '2715' 'DOM.RU, VLG'
-  speed_test '2694' 'DOM.RU, Orenburg'
-  speed_test '2697' 'DOM.RU, Tyumen'
+  speed_test '2694' 'DOM.RU, ORB'
+  speed_test '2697' 'DOM.RU, TYM'
 
 echo "---------------------------- OTHER---------------------------------" 
   speed_test '21456' 'DataPlanet, Zelik'
@@ -149,10 +149,10 @@ echo "---------------------------- OTHER---------------------------------"
   speed_test '29914' 'UMINET, PoVRV'
   speed_test '29914' 'City-Line, KoNKV'
   speed_test '44144' 'JIFNR, Dubna'
- speed_test '48192' 'Aeza.net,Moscow'
-  speed_test '44487' 'VDSina, Moscow'
-  speed_test '6827' 'MGTS, Moscow'
-  speed_test '11266' 'INETCOM, Moscow'
+ speed_test '48192' 'Aeza.net,MSC'
+  speed_test '44487' 'VDSina, MSC'
+  speed_test '6827' 'MGTS, MSC'
+  speed_test '11266' 'INETCOM, MSC'
 
 echo "---------------------------- WORLD---------------------------------" 
   speed_test '61933' 'Paris, FR'
