@@ -99,7 +99,7 @@ speed_test() {
 speed() {
     # Длина строки не более 15 символов
  
-  echo "---------------- ROSTELECOM----------------" 
+  echo "--------------------------- ROSTELECOM----------------------------" 
   speed_test '' 'Speedtest.net'
   speed_test '49870' 'RT, Kaluga'
   speed_test '5768' 'RT, Orenburg'
@@ -109,20 +109,20 @@ speed() {
   speed_test '4296' 'RT, Kemerovo'
   speed_test '2603' 'RT, Samara'
    
-echo "-------------------- MTS---------------------"
+echo "-------------------------------- MTS-------------------------------"
   speed_test '1907' 'MTS, Moscow'
   speed_test '4247' 'MTS, SPB'
   speed_test '51113' 'MTS, Reutovo'
   speed_test '3867' 'MTS, Norilsk'
   speed_test '62865' 'MTS, Tyumen'
   
-echo "------------------ BEELINE------------------" 
+echo "------------------------------ BEELINE-----------------------------" 
   speed_test '4718' 'Beeline, Moscow'
   speed_test '65484' 'Beeline, Tver'
   speed_test '63100' 'Beeline, Ivanovo'
   speed_test '24946' 'Beeline, Tyumen'
   speed_test '26679' 'Beeline, Sochi'
-echo "------------------ MEGAFON------------------" 
+echo "----------------------------- MEGAFON------------------------------" 
   speed_test '17039' 'Megafon, SPB'
   speed_test '20200' 'Megafon, SKL'
   speed_test '1634' 'Megafon, BLSH'
@@ -130,18 +130,18 @@ echo "------------------ MEGAFON------------------"
   speed_test '5641' 'Megafon, VLG'
   speed_test '5649' 'Megafon, PZK'
 
-echo "---------------- TELE2-YOTA---------------" 
+echo "--------------------------- TELE2-YOTA-----------------------------" 
   speed_test '27247' 'Tele2, Moscow'
   speed_test '7531' 'Yota, Moscow'
   
-echo "---------------- DOM.RU----------------"     
+echo "---------------------------- DOM.RU--------------------------------"     
   speed_test '2732' 'DOM.RU, Tver'
   speed_test '2661' 'DOM.RU, Tula'
   speed_test '2715' 'DOM.RU, VLG'
   speed_test '2694' 'DOM.RU, Orenburg'
   speed_test '2697' 'DOM.RU, Tyumen'
 
-echo "---------------- OTHER----------------" 
+echo "---------------------------- OTHER---------------------------------" 
   speed_test '21456' 'DataPlanet, Zelik'
   speed_test '33846' 'MicMedia, Zelik'
   speed_test '37711' 'BLIZCO, Zelik'
@@ -154,7 +154,7 @@ echo "---------------- OTHER----------------"
   speed_test '6827' 'MGTS, Moscow'
   speed_test '11266' 'INETCOM, Moscow'
 
-echo "---------------- WORLD----------------" 
+echo "---------------------------- WORLD---------------------------------" 
   speed_test '61933' 'Paris, FR'
   speed_test '28922' 'Amsterdam, NL'
   speed_test '1348' 'Balticom, Latvia'
