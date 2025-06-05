@@ -55,9 +55,9 @@ next() {
     printf "%-70s\n" "-" | sed 's/\s/-/g'
 }
 
-speed_test() { 
+speed_test() {
     local nodeName="$2"
-    
+
     if [ -z "$1" ]; then
         ./speedtest-cli/speedtest --progress=no --accept-license --accept-gdpr > ./speedtest-cli/speedtest.log 2>&1
     else
@@ -65,21 +65,33 @@ speed_test() {
     fi
 
     if [ $? -eq 0 ]; then
-        local dl_speed up_speed latency latency_value
+        local dl_speed up_speed latency
+        local dl_value up_value latency_value
+
         dl_speed=$(awk '/Download/{print $3" "$4}' ./speedtest-cli/speedtest.log)
         up_speed=$(awk '/Upload/{print $3" "$4}' ./speedtest-cli/speedtest.log)
         latency=$(awk '/Latency/{print $3" "$4}' ./speedtest-cli/speedtest.log)
-        latency_value=$(awk '/Latency/{print $3}' ./speedtest-cli/speedtest.log | cut -d'.' -f1) # Только целое значение
 
-        if [[ -n "${dl_speed}" && -n "${up_speed}" && -n "${latency}" ]]; then
-            # Определение цвета в зависимости от значения latency
-            if (( latency_value > 50 )); then
+        dl_value=$(awk '/Download/{print $3}' ./speedtest-cli/speedtest.log)
+        up_value=$(awk '/Upload/{print $3}' ./speedtest-cli/speedtest.log)
+        latency_value=$(awk '/Latency/{print $3}' ./speedtest-cli/speedtest.log)
+
+        if [[ -n "$dl_speed" && -n "$up_speed" && -n "$latency" ]]; then
+            # Определение цвета для Latency
+            if (( $(echo "$latency_value > 50" | bc -l) )); then
                 latency_color="\033[0;31m"  # Красный
             else
                 latency_color="\033[0;36m"  # Голубой
             fi
 
-            printf "\033[0;33m%-18s\033[0;32m%-18s\033[0;31m%-20s${latency_color}%-12s\033[0m\n" \
+            # Определение цвета для Download
+            if (( $(echo "$up_value - $dl_value >= 50" | bc -l) )); then
+                dl_color="\033[0;31m"  # Красный
+            else
+                dl_color="\033[0;32m"  # Зелёный
+            fi
+
+            printf "\033[0;33m%-18s\033[0;32m%-18s${dl_color}%-20s${latency_color}%-12s\033[0m\n" \
                 " ${nodeName}" "${up_speed}" "${dl_speed}" "${latency}"
         fi
     fi
