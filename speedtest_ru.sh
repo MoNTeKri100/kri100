@@ -77,15 +77,16 @@ speed_test() {
         latency_value=$(awk '/Latency/{print $3}' ./speedtest-cli/speedtest.log)
 
         if [[ -n "$dl_speed" && -n "$up_speed" && -n "$latency" ]]; then
-            # Определение цвета для Latency
+            # Цвет для Latency
             if (( $(echo "$latency_value > 50" | bc -l) )); then
                 latency_color="\033[0;31m"  # Красный
             else
                 latency_color="\033[0;36m"  # Голубой
             fi
 
-            # Определение цвета для Download
-            if (( $(echo "$up_value - $dl_value >= 50" | bc -l) )); then
+            # Цвет для Download
+            threshold=$(echo "$up_value * 0.7" | bc -l)
+            if (( $(echo "$dl_value < $threshold" | bc -l) )); then
                 dl_color="\033[0;31m"  # Красный
             else
                 dl_color="\033[0;32m"  # Зелёный
@@ -96,6 +97,7 @@ speed_test() {
         fi
     fi
 }
+
 speed() {
     # Длина строки не более 15 символов
  
