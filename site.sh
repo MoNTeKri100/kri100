@@ -53,10 +53,10 @@ check_site() {
     
     # Выводим результаты
     if [ ${#found_words[@]} -gt 0 ]; then
-        echo -e "${GREEN}Найдены ключевые слова:${NC}"
+        echo -e "${RED}Найдены ключевые слова:${NC}"
         printf '• %s\n' "${found_words[@]}"
     else
-        echo -e "${RED}Ключевые слова не найдены${NC}"
+        echo -e "${GREEN}Ключевые слова не найдены${NC}"
     fi
 }
 
