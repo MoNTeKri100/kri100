@@ -12,7 +12,7 @@ SITES=(
     "https://login.amd.com"
     "https://nnm-club-me.ru"
     "https://chatgpt.com"
-    "https://www.cisco.com/content/cdc/login.html?referer=/"
+    "https://www.cisco.com/content/cdc/login.html"
 )
 
 # Список ключевых слов (опасные или искомые)
